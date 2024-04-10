@@ -1,0 +1,1 @@
+The ontology is created in Protégé and saved as KRW_T2D_3.rdf. To replicate the SPARQL queries, import the RDF file into GraphDB and execute the queries as described in section 3 of the paper. To learn more about SNOMED CT, visit https://bioportal.bioontology.org/ontologies/SNOMEDCT.
