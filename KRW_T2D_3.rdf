@@ -1,0 +1,1012 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11/"
+     xml:base="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-11="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#birthPlaceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#birthPlaceOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#bornIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#City"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#bornIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#bornIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#City"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#characterizedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#characterizedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#characterizesDisease"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Symptom"/>
+        <rdfs:comment>Note that this property is about a disease of the class Disease that has a symptom of the class of Symptom. When a Patient has a symptom, this is defined as experiencesSymptom.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#characterizesDisease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#characterizesDisease">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Symptom"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#diseaseAffectsPatient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#diseaseAffectsPatient">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasDisease"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#diseaseTreatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#diseaseTreatedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#treatmentForDisease"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Treatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#experiencesSymptom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#experiencesSymptom">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#symptomExperiencedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Symptom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#fitsPersonalValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#fitsPersonalValue">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#fitsTreatment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Treatment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#PersonalValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#fitsTreatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#fitsTreatment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#PersonalValue"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Treatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasDisease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasDisease">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasGender -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasGender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Gender"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasMeasurementUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasMeasurementUnit">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#measurementUnitOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#MedicalMeasurement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#MeasurementUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasMedicalMeasurement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasMedicalMeasurement">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#medicalMeasurementOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#MedicalMeasurement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasPersonalValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasPersonalValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#PersonalValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#measuredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#measuredBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#performedMedicalMeasurement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#MedicalMeasurement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Doctor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#measurementUnitOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#measurementUnitOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#MeasurementUnit"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#MedicalMeasurement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#medicalMeasurementOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#medicalMeasurementOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#MedicalMeasurement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#performedMedicalMeasurement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#performedMedicalMeasurement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Doctor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#MedicalMeasurement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#symptomExperiencedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#symptomExperiencedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Symptom"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#treatedByDoctor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#treatedByDoctor">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#treatsPatient"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Doctor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#treatmentForDisease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#treatmentForDisease">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Treatment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#treatsPatient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#treatsPatient">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Doctor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasBirthDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasBirthDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#MedicalMeasurement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasFirstName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasFirstName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasLastName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasLastName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasMedicalRecordNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasMedicalRecordNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#MedicalMeasurement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#BloodSugarLevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#BloodSugarLevel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#MedicalMeasurement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#CholesterolLevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#CholesterolLevel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#MedicalMeasurement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#City">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#birthPlaceOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#DiabetesMellitus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#DiabetesMellitus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Disease">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#characterizedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Symptom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Doctor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Doctor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#treatsPatient"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Patient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Gender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Gender"/>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Geometry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Geometry"/>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#LifeStyleModification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#LifeStyleModification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#MeasurementUnit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#MeasurementUnit">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#measurementUnitOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#MedicalMeasurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#MedicalMeasurement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#MedicalMeasurement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasMeasurementUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#MeasurementUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#measuredBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Doctor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#medicalMeasurementOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Patient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#MedicationTreatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#MedicationTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasMedicalRecordNumber"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#bornIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasGender"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Gender"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasBirthDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasFirstName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#hasLastName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#PersonalValue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#PersonalValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#SurgicalIntervention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#SurgicalIntervention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Symptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Symptom">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#characterizesDisease"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Disease"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Treatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Treatment">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#treatmentForDisease"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Disease"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#achievement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#achievement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#PersonalValue"/>
+        <untitled-ontology-11:fitsTreatment rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#participateInRunEvent"/>
+        <untitled-ontology-11:fitsTreatment rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#walk10000StepsPerDay"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#amsterdam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#amsterdam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#bariatricSurgery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#bariatricSurgery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#SurgicalIntervention"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#berlin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#berlin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#blurredVision -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#blurredVision">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Symptom"/>
+        <untitled-ontology-11:characterizesDisease rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#t2D"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#drBart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#drBart">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Doctor"/>
+        <untitled-ontology-11:bornIn rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#leiden"/>
+        <untitled-ontology-11:hasGender rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#male"/>
+        <untitled-ontology-11:treatsPatient rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000000"/>
+        <untitled-ontology-11:hasBirthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1990-03-03T08:00:00</untitled-ontology-11:hasBirthDate>
+        <untitled-ontology-11:hasFirstName>Bart</untitled-ontology-11:hasFirstName>
+        <untitled-ontology-11:hasLastName>Roep</untitled-ontology-11:hasLastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#drsMarloes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#drsMarloes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Doctor"/>
+        <untitled-ontology-11:bornIn rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#haarlem"/>
+        <untitled-ontology-11:hasGender rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#female"/>
+        <untitled-ontology-11:treatsPatient rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000001"/>
+        <untitled-ontology-11:hasBirthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1975-08-10T08:00:00</untitled-ontology-11:hasBirthDate>
+        <untitled-ontology-11:hasFirstName>Marloes</untitled-ontology-11:hasFirstName>
+        <untitled-ontology-11:hasLastName>Meijer</untitled-ontology-11:hasLastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#family -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#family">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#PersonalValue"/>
+        <untitled-ontology-11:fitsTreatment rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#familyHikeInTheWeekend"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#familyHikeInTheWeekend -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#familyHikeInTheWeekend">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#LifeStyleModification"/>
+        <untitled-ontology-11:fitsPersonalValue rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#family"/>
+        <untitled-ontology-11:treatmentForDisease rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#t2D"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#fatigue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#fatigue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Symptom"/>
+        <untitled-ontology-11:characterizesDisease rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#t2D"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#female -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#female">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Gender"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#frequentUrination -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#frequentUrination">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Symptom"/>
+        <untitled-ontology-11:characterizesDisease rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#t2D"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#haarlem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#haarlem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#increasedHunger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#increasedHunger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Symptom"/>
+        <untitled-ontology-11:characterizesDisease rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#t2D"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#increasedThirst -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#increasedThirst">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Symptom"/>
+        <untitled-ontology-11:characterizesDisease rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#t2D"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#insulinTherapy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#insulinTherapy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#MedicationTreatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#leiden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#leiden">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#male -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#male">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Gender"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#nature -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#nature">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#PersonalValue"/>
+        <untitled-ontology-11:fitsTreatment rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#regularNatureWalk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#other -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#other">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Gender"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000000 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000000">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Patient"/>
+        <untitled-ontology-11:bornIn rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#haarlem"/>
+        <untitled-ontology-11:experiencesSymptom rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#fatigue"/>
+        <untitled-ontology-11:hasDisease rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#t2D"/>
+        <untitled-ontology-11:hasGender rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#female"/>
+        <untitled-ontology-11:hasPersonalValue rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#work"/>
+        <untitled-ontology-11:hasBirthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-04-04T08:00:00</untitled-ontology-11:hasBirthDate>
+        <untitled-ontology-11:hasFirstName>Veerle</untitled-ontology-11:hasFirstName>
+        <untitled-ontology-11:hasLastName>Blom</untitled-ontology-11:hasLastName>
+        <untitled-ontology-11:hasMedicalRecordNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">000000</untitled-ontology-11:hasMedicalRecordNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000000_bs_2020 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000000_bs_2020">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#BloodSugarLevel"/>
+        <untitled-ontology-11:hasMeasurementUnit rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#mg/dL"/>
+        <untitled-ontology-11:measuredBy rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#drBart"/>
+        <untitled-ontology-11:medicalMeasurementOf rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000000"/>
+        <untitled-ontology-11:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-05T08:00:00</untitled-ontology-11:hasDate>
+        <untitled-ontology-11:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">129.3</untitled-ontology-11:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000000_bs_2021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000000_bs_2021">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#BloodSugarLevel"/>
+        <untitled-ontology-11:hasMeasurementUnit rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#mg/dL"/>
+        <untitled-ontology-11:measuredBy rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#drBart"/>
+        <untitled-ontology-11:medicalMeasurementOf rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000000"/>
+        <untitled-ontology-11:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-04-08T08:00:00</untitled-ontology-11:hasDate>
+        <untitled-ontology-11:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">130.5</untitled-ontology-11:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000000_bs_2022 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000000_bs_2022">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#BloodSugarLevel"/>
+        <untitled-ontology-11:hasMeasurementUnit rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#mg/dL"/>
+        <untitled-ontology-11:measuredBy rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#drBart"/>
+        <untitled-ontology-11:medicalMeasurementOf rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000000"/>
+        <untitled-ontology-11:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-02T08:00:00</untitled-ontology-11:hasDate>
+        <untitled-ontology-11:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">129.9</untitled-ontology-11:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000000_bs_2023 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000000_bs_2023">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#BloodSugarLevel"/>
+        <untitled-ontology-11:hasMeasurementUnit rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#mg/dL"/>
+        <untitled-ontology-11:measuredBy rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#drBart"/>
+        <untitled-ontology-11:medicalMeasurementOf rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000000"/>
+        <untitled-ontology-11:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-15T08:00:00</untitled-ontology-11:hasDate>
+        <untitled-ontology-11:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">133.2</untitled-ontology-11:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Patient"/>
+        <untitled-ontology-11:bornIn rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#berlin"/>
+        <untitled-ontology-11:experiencesSymptom rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#blurredVision"/>
+        <untitled-ontology-11:hasDisease rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#t2D"/>
+        <untitled-ontology-11:hasGender rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#male"/>
+        <untitled-ontology-11:hasPersonalValue rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#achievement"/>
+        <untitled-ontology-11:hasBirthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1999-08-04T08:00:00</untitled-ontology-11:hasBirthDate>
+        <untitled-ontology-11:hasFirstName>Gidon</untitled-ontology-11:hasFirstName>
+        <untitled-ontology-11:hasLastName>Quint</untitled-ontology-11:hasLastName>
+        <untitled-ontology-11:hasMedicalRecordNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">000001</untitled-ontology-11:hasMedicalRecordNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000001_ch_2023 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000001_ch_2023">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#CholesterolLevel"/>
+        <untitled-ontology-11:hasMeasurementUnit rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#mg/dL"/>
+        <untitled-ontology-11:measuredBy rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#drsMarloes"/>
+        <untitled-ontology-11:medicalMeasurementOf rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000001"/>
+        <untitled-ontology-11:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-07T08:00:00</untitled-ontology-11:hasDate>
+        <untitled-ontology-11:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">242.8</untitled-ontology-11:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Patient"/>
+        <untitled-ontology-11:bornIn rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#amsterdam"/>
+        <untitled-ontology-11:experiencesSymptom rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#increasedHunger"/>
+        <untitled-ontology-11:hasDisease rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#t2D"/>
+        <untitled-ontology-11:hasGender rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#female"/>
+        <untitled-ontology-11:hasPersonalValue rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#nature"/>
+        <untitled-ontology-11:treatedByDoctor rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#drsMarloes"/>
+        <untitled-ontology-11:hasBirthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-11-11T08:00:00</untitled-ontology-11:hasBirthDate>
+        <untitled-ontology-11:hasFirstName>Mirthe</untitled-ontology-11:hasFirstName>
+        <untitled-ontology-11:hasLastName>Kemp</untitled-ontology-11:hasLastName>
+        <untitled-ontology-11:hasMedicalRecordNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">000002</untitled-ontology-11:hasMedicalRecordNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Patient"/>
+        <untitled-ontology-11:bornIn rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#amsterdam"/>
+        <untitled-ontology-11:experiencesSymptom rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#frequentUrination"/>
+        <untitled-ontology-11:hasDisease rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#t1D"/>
+        <untitled-ontology-11:hasGender rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#female"/>
+        <untitled-ontology-11:hasPersonalValue rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#work"/>
+        <untitled-ontology-11:treatedByDoctor rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#drBart"/>
+        <untitled-ontology-11:hasBirthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-02-08T08:00:00</untitled-ontology-11:hasBirthDate>
+        <untitled-ontology-11:hasFirstName>Noa</untitled-ontology-11:hasFirstName>
+        <untitled-ontology-11:hasLastName>Hartog</untitled-ontology-11:hasLastName>
+        <untitled-ontology-11:hasMedicalRecordNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">000003</untitled-ontology-11:hasMedicalRecordNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000004">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#Patient"/>
+        <untitled-ontology-11:bornIn rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#berlin"/>
+        <untitled-ontology-11:experiencesSymptom rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#increasedHunger"/>
+        <untitled-ontology-11:hasDisease rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#t2D"/>
+        <untitled-ontology-11:hasGender rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#female"/>
+        <untitled-ontology-11:hasPersonalValue rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#family"/>
+        <untitled-ontology-11:treatedByDoctor rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#drsMarloes"/>
+        <untitled-ontology-11:hasBirthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2001-09-03T08:00:00</untitled-ontology-11:hasBirthDate>
+        <untitled-ontology-11:hasFirstName>Anna</untitled-ontology-11:hasFirstName>
+        <untitled-ontology-11:hasLastName>Quint</untitled-ontology-11:hasLastName>
+        <untitled-ontology-11:hasMedicalRecordNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">000004</untitled-ontology-11:hasMedicalRecordNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#participateInRunEvent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#participateInRunEvent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#LifeStyleModification"/>
+        <untitled-ontology-11:fitsPersonalValue rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#achievement"/>
+        <untitled-ontology-11:treatmentForDisease rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#t2D"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#physicalActivity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#physicalActivity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#LifeStyleModification"/>
+        <untitled-ontology-11:treatmentForDisease rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#t2D"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#regularNatureWalk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#regularNatureWalk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#LifeStyleModification"/>
+        <untitled-ontology-11:fitsPersonalValue rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#nature"/>
+        <untitled-ontology-11:treatmentForDisease rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#t2D"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#t1D -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#t1D">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#DiabetesMellitus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#t2D -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#t2D">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#DiabetesMellitus"/>
+        <untitled-ontology-11:characterizedBy rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#blurredVision"/>
+        <untitled-ontology-11:characterizedBy rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#fatigue"/>
+        <untitled-ontology-11:characterizedBy rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#frequentUrination"/>
+        <untitled-ontology-11:characterizedBy rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#increasedHunger"/>
+        <untitled-ontology-11:characterizedBy rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#increasedThirst"/>
+        <untitled-ontology-11:diseaseAffectsPatient rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000000"/>
+        <untitled-ontology-11:diseaseAffectsPatient rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#p000001"/>
+        <untitled-ontology-11:diseaseTreatedBy rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#familyHikeInTheWeekend"/>
+        <untitled-ontology-11:diseaseTreatedBy rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#participateInRunEvent"/>
+        <untitled-ontology-11:diseaseTreatedBy rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#physicalActivity"/>
+        <untitled-ontology-11:diseaseTreatedBy rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#regularNatureWalk"/>
+        <untitled-ontology-11:diseaseTreatedBy rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#walk10000StepsPerDay"/>
+        <untitled-ontology-11:diseaseTreatedBy rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#walkDuringWorkBreak"/>
+        <untitled-ontology-11:diseaseTreatedBy rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#walkToWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#walk10000StepsPerDay -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#walk10000StepsPerDay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#LifeStyleModification"/>
+        <untitled-ontology-11:fitsPersonalValue rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#achievement"/>
+        <untitled-ontology-11:treatmentForDisease rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#t2D"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#walkDuringWorkBreak -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#walkDuringWorkBreak">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#LifeStyleModification"/>
+        <untitled-ontology-11:fitsPersonalValue rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#work"/>
+        <untitled-ontology-11:treatmentForDisease rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#t2D"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#walkToWork -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#walkToWork">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#LifeStyleModification"/>
+        <untitled-ontology-11:fitsPersonalValue rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#work"/>
+        <untitled-ontology-11:treatmentForDisease rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#t2D"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#work -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#work">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#PersonalValue"/>
+        <untitled-ontology-11:fitsTreatment rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#walkDuringWorkBreak"/>
+        <untitled-ontology-11:fitsTreatment rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#walkToWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#mg/dL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#mg/dL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/veerleblom/ontologies/2024/2/untitled-ontology-11#MeasurementUnit"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
